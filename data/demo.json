@@ -1,0 +1,303 @@
+[
+  {
+    "id": "m1",
+    "title": "Как найти первых клиентов",
+    "topics": [
+      "маркетинг"
+    ],
+    "format": "article",
+    "access": "free",
+    "level": "beginner",
+    "stages": [
+      "idea",
+      "launch"
+    ],
+    "industries": [
+      "услуги"
+    ],
+    "summary": "Где искать первые заявки при ограниченном бюджете.",
+    "related": [
+      "m2",
+      "m3"
+    ],
+    "popularity": 22
+  },
+  {
+    "id": "m2",
+    "title": "План рекламы на неделю",
+    "topics": [
+      "маркетинг"
+    ],
+    "format": "template",
+    "access": "free",
+    "level": "beginner",
+    "stages": [
+      "launch",
+      "operating"
+    ],
+    "industries": [
+      "розница",
+      "услуги"
+    ],
+    "summary": "План публикаций, каналов и расходов.",
+    "related": [
+      "m3"
+    ],
+    "popularity": 21
+  },
+  {
+    "id": "m3",
+    "title": "Система продвижения для растущего бизнеса",
+    "topics": [
+      "маркетинг"
+    ],
+    "format": "course",
+    "access": "paid",
+    "level": "intermediate",
+    "stages": [
+      "growth",
+      "operating"
+    ],
+    "industries": [
+      "розница"
+    ],
+    "summary": "Практика выбора каналов продвижения.",
+    "related": [],
+    "popularity": 20
+  },
+  {
+    "id": "s1",
+    "title": "Первые продажи в сфере услуг",
+    "topics": [
+      "продажи"
+    ],
+    "format": "article",
+    "access": "free",
+    "level": "beginner",
+    "stages": [
+      "launch"
+    ],
+    "industries": [
+      "услуги"
+    ],
+    "summary": "Как провести разговор с потенциальным покупателем.",
+    "related": [
+      "s2",
+      "s3"
+    ],
+    "popularity": 19
+  },
+  {
+    "id": "s2",
+    "title": "Шаблон воронки продаж",
+    "topics": [
+      "продажи"
+    ],
+    "format": "template",
+    "access": "free",
+    "level": "intermediate",
+    "stages": [
+      "operating",
+      "growth"
+    ],
+    "industries": [
+      "розница"
+    ],
+    "summary": "Учёт этапов сделки и возражений.",
+    "related": [],
+    "popularity": 18
+  },
+  {
+    "id": "s3",
+    "title": "Переговоры и работа с возражениями",
+    "topics": [
+      "продажи"
+    ],
+    "format": "course",
+    "access": "paid",
+    "level": "advanced",
+    "stages": [
+      "growth"
+    ],
+    "industries": [
+      "услуги"
+    ],
+    "summary": "Практика переговоров с клиентами.",
+    "related": [],
+    "popularity": 17
+  },
+  {
+    "id": "f1",
+    "title": "Кассовый разрыв и денежный поток",
+    "topics": [
+      "финансы"
+    ],
+    "format": "article",
+    "access": "free",
+    "level": "beginner",
+    "stages": [
+      "operating"
+    ],
+    "industries": [],
+    "summary": "Как заметить дефицит денег заранее.",
+    "related": [
+      "f2"
+    ],
+    "popularity": 16
+  },
+  {
+    "id": "f2",
+    "title": "Платёжный календарь",
+    "topics": [
+      "финансы"
+    ],
+    "format": "template",
+    "access": "free",
+    "level": "intermediate",
+    "stages": [
+      "operating",
+      "growth"
+    ],
+    "industries": [
+      "розница"
+    ],
+    "summary": "Шаблон для планирования поступлений и расходов.",
+    "related": [],
+    "popularity": 15
+  },
+  {
+    "id": "f3",
+    "title": "Калькулятор точки безубыточности",
+    "topics": [
+      "финансы"
+    ],
+    "format": "calculator",
+    "access": "free",
+    "level": "beginner",
+    "stages": [
+      "idea",
+      "launch"
+    ],
+    "industries": [],
+    "summary": "Оцените, сколько продаж нужно для покрытия расходов.",
+    "related": [],
+    "popularity": 14
+  },
+  {
+    "id": "a1",
+    "title": "Учёт для начинающего предпринимателя",
+    "topics": [
+      "учёт"
+    ],
+    "format": "article",
+    "access": "free",
+    "level": "beginner",
+    "stages": [
+      "idea",
+      "launch"
+    ],
+    "industries": [],
+    "summary": "Обзор основных задач учёта.",
+    "related": [],
+    "popularity": 13
+  },
+  {
+    "id": "a2",
+    "title": "Календарь отчётности",
+    "topics": [
+      "учёт"
+    ],
+    "format": "template",
+    "access": "free",
+    "level": "intermediate",
+    "stages": [
+      "operating",
+      "growth"
+    ],
+    "industries": [
+      "услуги"
+    ],
+    "summary": "Шаблон для учёта дат подачи документов.",
+    "related": [],
+    "popularity": 12
+  },
+  {
+    "id": "l1",
+    "title": "Как начать своё дело",
+    "topics": [
+      "запуск"
+    ],
+    "format": "article",
+    "access": "free",
+    "level": "beginner",
+    "stages": [
+      "idea",
+      "launch"
+    ],
+    "industries": [],
+    "summary": "От проверки идеи до первой продажи.",
+    "related": [
+      "l2",
+      "m1"
+    ],
+    "popularity": 11
+  },
+  {
+    "id": "l2",
+    "title": "Чек-лист запуска интернет-магазина",
+    "topics": [
+      "запуск"
+    ],
+    "format": "template",
+    "access": "free",
+    "level": "beginner",
+    "stages": [
+      "launch"
+    ],
+    "industries": [
+      "розница"
+    ],
+    "summary": "Последовательность действий для запуска магазина.",
+    "related": [],
+    "popularity": 10
+  },
+  {
+    "id": "t1",
+    "title": "Первый сотрудник в малом бизнесе",
+    "topics": [
+      "команда"
+    ],
+    "format": "article",
+    "access": "free",
+    "level": "beginner",
+    "stages": [
+      "operating",
+      "growth"
+    ],
+    "industries": [],
+    "summary": "Подготовьте задачи и требования для найма.",
+    "related": [
+      "t2"
+    ],
+    "popularity": 9
+  },
+  {
+    "id": "t2",
+    "title": "Распределение задач в команде",
+    "topics": [
+      "команда"
+    ],
+    "format": "webinar",
+    "access": "free",
+    "level": "intermediate",
+    "stages": [
+      "growth"
+    ],
+    "industries": [
+      "услуги"
+    ],
+    "summary": "Разбор делегирования и распределения ответственности.",
+    "related": [],
+    "popularity": 8
+  }
+]

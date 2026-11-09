@@ -1,0 +1,10 @@
+services:
+  api:
+    build: .
+    ports:
+      - "127.0.0.1:${API_PORT:-8000}:8000"
+    environment:
+      CATALOG_PATH: ${CATALOG_PATH:-}
+      CORS_ORIGINS: ${CORS_ORIGINS:-}
+    volumes:
+      - ./private:/private:ro

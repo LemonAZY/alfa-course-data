@@ -1,0 +1,6 @@
+**
+!requirements.txt
+!app/
+!app/*.py
+!data/
+!data/demo.json
