@@ -1,0 +1,11 @@
+# Исходные данные не загружаем в GitHub
+*.backup
+*.csv
+*.jsonl
+*.parquet
+*.tsv
+*.xls
+*.xlsx
+.ipynb_checkpoints/
+__pycache__/
+data/
