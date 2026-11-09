@@ -1,14 +1,3 @@
-"""Чтение PostgreSQL custom-dump (.backup, pg_dump -Fc) без установленного PostgreSQL.
-
-Использование:
-    from backup_reader import BackupReader
-    br = BackupReader("data/raw/alfa_course_hackathon.backup")
-    br.tables()                 # список таблиц с данными
-    df = br.table("Articles")   # pandas.DataFrame
-    dfs = br.load_all()         # {имя_таблицы: DataFrame}
-
-Поддержаны несжатые данные и gzip(zlib). lz4/zstd не поддержаны (в pg_dump по умолчанию gzip).
-"""
 import re
 import zlib
 from dataclasses import dataclass, field
@@ -36,7 +25,7 @@ class BackupReader:
         self._read_header()
         self._read_toc()
 
-    # ---------- низкоуровневое чтение ----------
+    # низкоуровневое чтение
     def _byte(self):
         b = self.f.read(1)
         if not b:
@@ -63,7 +52,7 @@ class BackupReader:
             off |= self._byte() << (8 * i)
         return flag, off
 
-    # ---------- заголовок и оглавление ----------
+    # заголовок и оглавление
     def _read_header(self):
         if self.f.read(5) != b"PGDMP":
             raise ValueError("Это не custom-формат pg_dump (нет сигнатуры PGDMP)")
@@ -77,7 +66,7 @@ class BackupReader:
         else:
             level = self._int()
             self.compression = 0 if level == 0 else 1
-        for _ in range(7):  # дата создания
+        for _ in range(7):  
             self._int()
         self.dbname = self._str()
         self.server_version = self._str()
@@ -93,7 +82,7 @@ class BackupReader:
             tag = self._str(); desc = self._str()
             self._int()  # section
             defn = self._str(); self._str()  # defn, drop
-            copy_stmt = self._str(); namespace = self._str(); self._str()  # tablespace
+            copy_stmt = self._str(); namespace = self._str(); self._str()  
             if self.version >= (1, 14, 0):
                 self._str()  # tableam
             if self.version >= (1, 16, 0):
@@ -110,7 +99,7 @@ class BackupReader:
             self.toc.append(TocEntry(dump_id, tag, desc, defn, copy_stmt, namespace, flag, off, deps))
         self._by_table = {e.tag: e for e in self.toc if e.desc == "TABLE DATA"}
 
-    # ---------- данные ----------
+    # данные 
     def tables(self):
         return sorted(self._by_table)
 
